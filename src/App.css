@@ -1,38 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
 .App {
+  font-family: 'Montserrat';
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header {
+  min-height: 30px;
+  color: #054c73;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backgroundImage {
+  background-image: url('../public/hero-image.png');
+  width: 100%;
+  height: 1100px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.productCard {
+  width: 40%;
+  border-radius: 20px;
+  background-color: #dfe9f4;
+  position: relative;
+  display: block;
+  float: right;
+  padding: 50px;
+  margin-right: 100px;
+  margin-top: 250px;
+}
+
+.Paragraph {
+  font-size: 20px;
+  line-height: 2.0;
+}
+
+.cardHeader1 {
+  font-size: 75px;
+  color: #054c73;
+}
+
+.cardHeader2 {
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #054c73;
+  padding: 30px 80px;
+  font-size: 15px;
   color: white;
+  border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.Icon-tag {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Icon-tag2 {
+  background-color: #f2f5ff;
+  margin: 0px;
+}
+.space {
+  margin: 20px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.row {
+  background-color: #f2f5ff;
+  margin: 0px;
+}
+
+
+
+
+.Productdesc {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px
+  
+}
+
+/*mobile-screen*/
+
+@media screen and (max-width: 750px) {
+  .Product {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    gap: 10px;
+    margin-right: auto; 
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  .Productdesc {
+    text-align: center;
+    
+  }
+
+  .Icon-tag {
+    display: flex;
+    margin-right: 30px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .row {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    justify-content: space-between;
+    margin-right: auto;
+  
+  }
+
+  .backgroundImage {
+    background-image: url('../public/hero-image.png');
+    width: 100%;
+    height: 800px;
+    text-align: justify;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cardHeader1 {
+    font-size: 35px;
+    color: #054c73;
+  }
+
+  .productCard {
+    width: 50%;
+    border-radius: 20px;
+    background-color: #dfe9f4;
+    position: relative;
+    display: block;
+    float: right;
+    padding: 50px;
+    margin-right: 30px;
+    margin-top: 100px;
+  }
+
+  .card {
+    margin: 20px;
+  }
+
+  .Paragraph {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .btn {
+    background-color: #054c73;
+    padding: 20px 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
   }
 }
+
+
